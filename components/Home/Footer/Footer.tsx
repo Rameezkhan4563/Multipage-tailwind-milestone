@@ -1,0 +1,35 @@
+import Image from 'next/image';
+import Link from 'next/link';
+import React from 'react'
+
+const Footer = () => {
+    return (
+      <div className="pt-16 pb-16 bg-[#353535]">
+        <div>
+          
+        </div>
+        <div className="flex items-center flex-wrap justify-center space-x-10 space-y-4 text-white font-bold">
+          <Link href="/">
+            <div>Home</div>
+          </Link>
+          <Link href="/services">
+            <div>Services</div>
+          </Link>
+          <Link href="/projects">
+            <div>Project</div>
+          </Link>
+          <Link href="/reviews">
+            <div>Reviews</div>
+          </Link>
+          <Link href="/contact">
+            <div>Contact</div>
+          </Link>
+        </div>
+        <p className="text-white text-opacity-60 mt-6 text-center">
+          © 2024 All Rights Reserved
+        </p>
+      </div>
+    );
+}
+
+export default Footer
